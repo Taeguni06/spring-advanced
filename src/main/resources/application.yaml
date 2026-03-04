@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: expert
+
+  datasource:
+
+    url: jdbc:mysql://localhost:3306/expert
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 12345678
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: info
+
+jwt:
+  secret:
+    key: 7n8X9w2mP4vL1kQ6zR5bT8jY3dN0M7uX7n8X9w2mP4vL1kQ6zR5bT8jY3dN0M7uX
+  access-token-validity: 691200000
