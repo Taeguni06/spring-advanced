@@ -9,6 +9,10 @@ spring:
     username: root
     password: 12345678
 
+  output:
+    ansi:
+      enabled: always
+
   jpa:
     hibernate:
       ddl-auto: update
